@@ -1,35 +1,75 @@
 * {
   background-color: rgb(252, 249, 250);
-  margin: 0;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+section {
+  display: flex;
+  align-items: center;
 }
 
 header {
-  padding: 50px;
   width: 100%;
-  text-align: right;
+  height: 75px;
   border-bottom: 10px solid black;
   border-style: double;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
 }
 
-
+/* Styles for my left aside */
 #left-aside {
-  display: flex;
-  display: inline-block;
-  width: 50%;
+  /* width: 50%; */
+  /* align-items: center; */
+  flex: 1;
 }
 
-#right-aside {
+.circle {
   display: flex;
-  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-image: linear-gradient(rgb(0, 255, 255) 0%, rgb(0, 200, 255) 100%);
+}
+
+#first-blog {
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+  font-size: 3em;
+  margin: 0;
+}
+
+/* Styles for the right aside */
+#right-aside {
   border-left: 10px solid black;
   border-right: 0px;
   border-top: 0px;
   border-bottom: 0px;
   border-style: double;
-  height: 100vh;
+  flex: 1;
 }
 
-form {
+#blog-header {
+  padding-bottom: 10px;
+}
+
+.form-container,
+.circle-container {
+  /* margin-left: 50%;
+  margin-top: 30%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 label {
@@ -45,4 +85,10 @@ label {
 .input-field {
   width: 500px;
   height: 300px;
+}
+
+button {
+  width: 509px;
+  margin-top: 15px;
+  padding: 10px;
 }
