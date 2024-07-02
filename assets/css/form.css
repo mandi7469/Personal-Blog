@@ -1,3 +1,48 @@
-*{
-    background-color: pink;
+* {
+  background-color: rgb(252, 249, 250);
+  margin: 0;
+}
+
+header {
+  padding: 50px;
+  width: 100%;
+  text-align: right;
+  border-bottom: 10px solid black;
+  border-style: double;
+}
+
+
+#left-aside {
+  display: flex;
+  display: inline-block;
+  width: 50%;
+}
+
+#right-aside {
+  display: flex;
+  display: inline-block;
+  border-left: 10px solid black;
+  border-right: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-style: double;
+  height: 100vh;
+}
+
+form {
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.input-field-1 {
+  width: 500px;
+}
+.input-field {
+  width: 500px;
+  height: 300px;
 }
