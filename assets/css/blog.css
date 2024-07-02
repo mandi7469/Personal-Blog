@@ -1,3 +1,75 @@
 * {
-    background-color: blue;
+    background-color: rgb(252, 249, 250);
+  }
+
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  top: 0px;
+  width: 100%;
+  height: 60px;
+  border-bottom: 10px solid black;
+  border-style: double;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+}
+
+#emoji-back {
+  display: flex;
+  position: absolute;
+  right: 20px;
+  align-self: flex-start;
+  font-size: 30px;
+  padding: 10px;
+  float: right;
+}
+
+#emoji {
+  margin-left: 20px;
+}
+
+/* button {
+  display: flex;
+  justify-content: flex-end;
+
+} */
+
+#first-blog {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  font-size: 30px;
+  padding-left: 20px;
+}
+
+section {
+  display: flex;
+
+}
+
+footer {
+  display: grid;
+  place-items: center;
+  position: sticky;
+  border-top: 10px solid black;
+  border-style: double;
+  border-left: 0px;
+  border-right: 0px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+}
+
+#footer-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

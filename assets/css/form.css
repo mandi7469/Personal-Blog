@@ -26,6 +26,13 @@ header {
   border-top: 0px;
 }
 
+#emoji {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 30px;
+  padding: 10px;
+}
+
 /* Styles for my left aside */
 #left-aside {
   flex: 1;
@@ -42,8 +49,10 @@ header {
   width: 20vi;
   height: 20vi;
   border-radius: 50%;
-  background-image: linear-gradient(rgb(0, 255, 255) 0%, rgb(0, 200, 255) 100%);
+  background-image: linear-gradient(rgb(0, 255, 255) 0%,  rgb(29, 78, 213) 100%);
 }
+
+
 
 #first-blog {
   color: white;
@@ -75,6 +84,9 @@ header {
 
 #blog-header {
   padding-bottom: 10px;
+  color:  rgb(29, 78, 213);
+  font-size: 50px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .circle-container {
