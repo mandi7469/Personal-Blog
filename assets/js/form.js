@@ -14,7 +14,7 @@ function init() {
 }
 
 //redirects to blog page
-function renderBlog() {
+function goToBlog() {
   window.location.href = "blog.html";
 }
 
@@ -32,7 +32,7 @@ function handleInput(event) {
 
   localStorage.setItem("blogForm", JSON.stringify(entries));
 
-  renderBlog();
+  goToBlog();
 }
 // Add listener to submit element
 submitInput.addEventListener("click", handleInput);

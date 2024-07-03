@@ -1,6 +1,6 @@
 * {
-    background-color: rgb(252, 249, 250);
-  }
+  background-color: rgb(252, 249, 250);
+}
 
 html,
 body {
@@ -49,9 +49,27 @@ header {
   padding-left: 20px;
 }
 
-section {
+.posts {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-style: dotted;
+  border-radius: 10px;
+  border-color: black;
+  margin: 10px;
+  padding-left: 10px;
+}
 
+.blog-title {
+  text-decoration: underline;
+}
+
+.blog-content {
+  font-style: italic;
+}
+
+.posted-by {
+  font-size: smaller;
 }
 
 footer {
@@ -65,7 +83,6 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-
 }
 
 #footer-text {
