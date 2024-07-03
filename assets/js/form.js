@@ -3,14 +3,15 @@ const titleInput = document.querySelector("#title");
 const contentInput = document.querySelector("#content");
 const submitInput = document.querySelector("#submit");
 
-const entries = []
+let entries = []
 
 function init() {
     const storedEntries =JSON.parse(localStorage.getItem("blogForm"));
 
     if (storedEntries !== null) {
-        entries = storedEntries;
+        entries = entries.concat(storedEntries)
     }
+
     //renderEntries();
 }
 
@@ -26,10 +27,9 @@ function showResponse(event) {
     };
 
     entries.push(blogForm);
-    
 
 
-    localStorage.setItem("blogForm", JSON.stringify(blogForm));
+    localStorage.setItem("blogForm", JSON.stringify(entries));
 
     let test =''
 }
