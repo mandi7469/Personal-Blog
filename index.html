@@ -8,66 +8,67 @@
     <title>Form</title>
   </head>
   <body>
-    <header>
-      <div id="emoji">🌞</div>
-    </header>
+    <div class="container dark">
+      <header>
+        <div id="theme-switcher">🌞</div>
+      </header>
 
-    <section>
-      <div id="left-aside">
-        <div class="circle-container">
-          <div class="circle">
-            <h1 id="first-blog">My First Blog</h1>
+      <section>
+        <div id="left-aside">
+          <div class="circle-container">
+            <div class="circle">
+              <h1 id="first-blog">My First Blog</h1>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div id="divider"></div>
+        <div id="divider"></div>
 
-      <div id="right-aside">
-        <div class="form-container">
-          <form>
-            <h1 id="blog-header">What's on your mind</h1>
-            <p>
-              <label for="username">User Name:</label>
-              <input
-                class="input-field-1"
-                type="text"
-                placeholder="e.g. John123"
-                id="username"
-              />
-            </p>
+        <div id="right-aside">
+          <div class="form-container">
+            <form>
+              <h1 id="blog-header">What's on your mind</h1>
+              <p>
+                <label for="username">User Name:</label>
+                <input
+                  class="input-field-1"
+                  type="text"
+                  placeholder="e.g. John123"
+                  id="username"
+                />
+              </p>
 
-            <p>
-              <label for="title">Title:</label>
-              <input
-                class="input-field-1"
-                type="text"
-                placeholder="e.g. Blog Title"
-                id="title"
-              />
-            </p>
+              <p>
+                <label for="title">Title:</label>
+                <input
+                  class="input-field-1"
+                  type="text"
+                  placeholder="e.g. Blog Title"
+                  id="title"
+                />
+              </p>
 
-            <p>
-              <label for="content">Content</label>
-              <textarea
-                class="input-field"
-                id="content"
-                placeholder="e.g. Here is the content"
-                id="content"
-              ></textarea>
-          
-            </p>
+              <p>
+                <label for="content">Content</label>
+                <textarea
+                  class="input-field"
+                  id="content"
+                  placeholder="e.g. Here is the content"
+                  id="content"
+                ></textarea>
+              </p>
 
-            <p>
-              <button id="submit">Submit</button>
-            </p>
-            <div id="error-message">*** Please complete all required fields ***</div>
-          </form>
-          
+              <p>
+                <button id="submit">Submit</button>
+              </p>
+              <div id="error-message">
+                *** Please complete all required fields ***
+              </div>
+            </form>
+          </div>
         </div>
-      </div>
-    </section>
-
+      </section>
+    </div>
     <script defer src="./assets/js/logic.js"></script>
     <script defer src="./assets/js/form.js"></script>
   </body>

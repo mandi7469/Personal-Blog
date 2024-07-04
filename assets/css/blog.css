@@ -1,6 +1,6 @@
-* {
+/* * {
   background-color: rgb(252, 249, 250);
-}
+} */
 
 html,
 body {
@@ -19,7 +19,6 @@ header {
   border-style: double;
   border-left: 0px;
   border-right: 0px;
-  border-top: 0px;
 }
 
 #emoji-back {
@@ -30,15 +29,6 @@ header {
   float: right;
 }
 
-#emoji {
-  margin-left: 20px;
-}
-
-/* button {
-  display: flex;
-  justify-content: flex-end;
-
-} */
 
 #first-blog {
   display: flex;
@@ -74,7 +64,6 @@ header {
 footer {
   display: grid;
   place-items: center;
-  
   border-top: 10px solid black;
   border-style: double;
   border-left: 0px;
@@ -87,4 +76,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+a {
+  color: black;
 }
