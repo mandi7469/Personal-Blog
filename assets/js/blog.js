@@ -1,5 +1,5 @@
-const body = document.body;
-
+const mainSection = document.querySelector("#main-section");
+const backButton = document.querySelector("#back-button");
 let entries = [];
 
 function renderBlog() {
@@ -22,7 +22,7 @@ function renderBlog() {
       blogContent.textContent = post.content;
       postedBy.textContent = "Posted by: " + post.username;
 
-      body.appendChild(section);
+      mainSection.appendChild(section);
       section.appendChild(blogTitle);
       section.appendChild(blogContent);
       section.appendChild(postedBy);
@@ -36,6 +36,12 @@ function renderBlog() {
   }
 }
 
+function handleBack(event) {
+  event.preventDefault();
+  window.history.back();
+}
+
+backButton.addEventListener("click", handleBack);
+
 renderBlog();
 
-blogTitle.textContent = localStorage.getItem;

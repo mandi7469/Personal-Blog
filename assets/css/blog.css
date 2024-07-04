@@ -6,12 +6,13 @@ html,
 body {
   height: 100%;
   margin: 0px;
-  overflow: hidden;
+  overflow: auto;
+  flex-direction: column;
 }
 
 header {
   display: flex;
-  top: 0px;
+  justify-content: space-between;
   width: 100%;
   height: 60px;
   border-bottom: 10px solid black;
@@ -23,9 +24,7 @@ header {
 
 #emoji-back {
   display: flex;
-  position: absolute;
   right: 20px;
-  align-self: flex-start;
   font-size: 30px;
   padding: 10px;
   float: right;
@@ -75,13 +74,12 @@ header {
 footer {
   display: grid;
   place-items: center;
-  position: sticky;
+  
   border-top: 10px solid black;
   border-style: double;
   border-left: 0px;
   border-right: 0px;
-  position: absolute;
-  bottom: 0;
+
   width: 100%;
 }
 
