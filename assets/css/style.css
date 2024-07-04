@@ -1,7 +1,7 @@
+/* styling for the dark and light toggle apperances*/
 .dark {
   background-color: rgb(31, 15, 99);
   color: white;
- 
 }
 
 .light {
@@ -16,29 +16,29 @@
 }
 
 .dark header {
-    border-bottom: 10px solid rgb(255, 235, 205);
-    border-style: double;
+  border-bottom: 10px solid rgb(255, 235, 205);
+  border-style: double;
 }
 
 .dark #divider {
-    border-left: 10px solid rgb(255, 235, 205);
-    border-style: double;
+  border-left: 10px solid rgb(255, 235, 205);
+  border-style: double;
 }
 
 .dark #blog-header {
-    text-shadow: 2px 2px 5px rgb(255, 235, 205);
+  text-shadow: 2px 2px 5px rgb(255, 235, 205);
 }
 
 .dark .posts {
-    border-style: dotted;
-    border-color: rgb(255, 235, 205);
+  border-style: dotted;
+  border-color: rgb(255, 235, 205);
 }
 
 .dark footer {
-    border-top: 10px solid rgb(255, 235, 205);
-    border-style: double;
+  border-top: 10px solid rgb(255, 235, 205);
+  border-style: double;
 }
 
 .dark a {
-    color: rgb(255, 235, 205);
+  color: rgb(255, 235, 205);
 }

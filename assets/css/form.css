@@ -1,18 +1,13 @@
-/* * {
-  background-color: rgb(252, 249, 250);
-} */
-
 html,
 body {
   height: 100%;
   margin: 0px;
 }
 
-
 section {
   display: flex;
 }
-
+/* styles for my header */
 header {
   display: flex;
   justify-content: flex-end;
@@ -25,8 +20,7 @@ header {
   border-top: 0px;
 }
 
-
-/* Styles for my left aside */
+/* styles for my left aside */
 #left-aside {
   flex: 1;
   display: flex;
@@ -34,6 +28,7 @@ header {
   align-items: center;
 }
 
+/* circle styling */
 .circle {
   display: flex;
   justify-content: center;
@@ -42,11 +37,10 @@ header {
   width: 20vi;
   height: 20vi;
   border-radius: 50%;
-  background-image: linear-gradient(rgb(0, 255, 255) 0%,  rgb(29, 78, 213) 100%);
+  background-image: linear-gradient(rgb(0, 255, 255) 0%, rgb(29, 78, 213) 100%);
 }
 
-
-
+/* styling for my text in the circle */
 #first-blog {
   color: white;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -55,6 +49,15 @@ header {
   margin: 0;
 }
 
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+}
+
+/* styling for middle line */
 #divider {
   border-left: 10px solid black;
   border-right: 0px;
@@ -65,7 +68,7 @@ header {
   overflow: hidden;
 }
 
-/* Styles for the right aside */
+/* styles for the right aside */
 #right-aside {
   flex: 1;
   display: flex;
@@ -77,18 +80,9 @@ header {
 
 #blog-header {
   padding-bottom: 10px;
-  color:  rgb(0, 255, 255);
+  color: rgb(0, 255, 255);
   font-size: 50px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-.circle-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 100%;
-
 }
 
 form {
@@ -104,7 +98,7 @@ form {
   padding-left: 10px;
 }
 
-
+/* styling for the labels in the form */
 label {
   display: flex;
   flex-direction: column;
@@ -127,6 +121,7 @@ button {
   padding: 10px;
 }
 
+/* styling for the hidden error message */
 #error-message {
   display: flex;
   color: red;
@@ -135,4 +130,3 @@ button {
   margin: 10px;
   display: none;
 }
-
