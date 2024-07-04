@@ -2,7 +2,7 @@ const usernameInput = document.querySelector("#username");
 const titleInput = document.querySelector("#title");
 const contentInput = document.querySelector("#content");
 const submitInput = document.querySelector("#submit");
-
+const errorMessage = document.querySelector("#error-message")
 let entries = [];
 
 function init() {
@@ -25,14 +25,18 @@ function handleInput(event) {
   const blogForm = {
     username: username.value.trim(),
     title: title.value.trim(),
-    content: content.value.trim(),
+    content: content.value.trim()
   };
 
-  entries.push(blogForm);
+  if (blogForm.username == "" || blogForm.title == "" || blogForm.content == "") {
+      errorMessage.style.display = "block";
+  } else {
+    entries.push(blogForm);
 
-  localStorage.setItem("blogForm", JSON.stringify(entries));
+    localStorage.setItem("blogForm", JSON.stringify(entries));
 
-  goToBlog();
+    goToBlog();
+  }
 }
 // Add listener to submit element
 submitInput.addEventListener("click", handleInput);
