@@ -19,7 +19,7 @@ This application showcases the advace skills I have gained with HTML, CSS and Ja
 
 
 ## Link
-[Link to deplyed website]()
+[Link to deplyed website](https://mandi7469.github.io/Personal-Blog/)
 
 The images shows the web application's apperance for both pages along with a visual of dark mode/light mode
 
